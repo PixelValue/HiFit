@@ -1,0 +1,65 @@
+body {
+  width: 100%;
+  /* UI Properties */
+  background: #008ed2 0% 0% no-repeat padding-box;
+  opacity: 1;
+  overflow-x: hidden;
+}
+
+.headerText1 {
+  margin-left: 125px;
+}
+.headerText1_des {
+  width: 631px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+}
+.headerText2 {
+  margin-left: 165px;
+}
+.table_one {
+  width: 320px;
+}
+.table_two {
+  width: 620px;
+  /* height: 100px; */
+}
+.table_three {
+  width: 450px;
+}
+.headerText2_des {
+  width: 700px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+}
+
+.headerText1_para {
+  margin-top: 20px;
+  font-size: 17px;
+  color: #fff;
+  font-weight: 420;
+}
+.downloadContainer {
+  margin-top: 17vh;
+  margin-left: 396px;
+}
+
+.footerSection {
+  margin-left: 15vh;
+  /* width: 600px; */
+}
+.footer-Bottom-text {
+  color: #ffffff;
+  /* margin-left: 10vh; */
+  margin-left: 15vh;
+
+}
+
+.Bottom-logo-img {
+  width: 12vh;
+  margin-left: 82px;
+  margin-bottom: 20px;
+}
+

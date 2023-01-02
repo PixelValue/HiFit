@@ -21,8 +21,14 @@ import linkdin from "./images/linkdin.png";
 import twitter from "./images/twitter.png";
 import ticktok from "./images/ticktok.png";
 import footercard from "./images/footer-card.png";
+import circleLogo from "./images/circleLogo.png";
+import footerDes from "./images/footerDes.png";
+
+import { useNavigate } from "react-router-dom";
 
 function Body() {
+  const navigate = useNavigate();
+
   return (
     <div className="main_container">
       <div className="container">
@@ -32,7 +38,7 @@ function Body() {
             <div className="container" />
 
             <div className="logo">
-              <a href="index.html">
+              <a href="/hifit">
                 <img src={logo} />
               </a>
             </div>
@@ -52,9 +58,9 @@ function Body() {
         <div className="container">
           <div className="banner-content">
             <div className="row">
-              <div className="col-md-6">
+              <div className="col-md-6 col-sm-4">
                 <h2 className="banner-title">
-                  Without leaving your home do sport!
+                  Without leaving your home <br></br>do sport!
                 </h2>
                 <p className="banner-para">
                   Take care of your health whenever you wish exercise with HiFit
@@ -81,10 +87,10 @@ function Body() {
       <section className="about">
         <div className="container">
           <div className="row">
-            <div className="col-md-6">
+            <div className="col">
               <img src={aboutus} className="aboutus" />
             </div>
-            <div className="col-md-6">
+            <div className="col">
               <h3 className="about-title text-white">
                 Technology meets health.
               </h3>
@@ -94,10 +100,10 @@ function Body() {
                 with HiFit wherever
               </p>
               <p className="about-content text-white">
-                Take care of your health whenever you wish exercise with HiFit
-                wherever Take care of your health whenever you wish exercise
-                with HiFit wherever
+                With its biggest project, HiFit, it will allow users to do
+                wherever they want, with expert trainers.
               </p>
+              {/* </div> */}
             </div>
           </div>
         </div>
@@ -110,12 +116,12 @@ function Body() {
 
         <div className="col-md-8">
           <h3 className="mid-text-medium">
-            Respond to body goals and specific needs Reach instructors
+            Respond to body goals and specific needs<br></br> Reach instructors
           </h3>
         </div>
 
         <div className="mid-logo">
-          <img src={logo} alt="logo-mid" className="mid-logo-img" />
+          <img src={circleLogo} alt="logo-mid" className="mid-logo-img" />
         </div>
       </section>
 
@@ -126,15 +132,15 @@ function Body() {
 
       <div className="container">
         <div className="row justify-content-md-center">
-          <div className="col-4">
+          <div className="col-md-3">
             <img src={one} className="mobile-img" />
           </div>
 
-          <div className="col-4">
+          <div className="col-md-3">
             <img src={two} className="mobile-img" />
           </div>
 
-          <div className="col-4">
+          <div className="col-md-3">
             <img src={three} className="mobile-img" />
           </div>
         </div>
@@ -145,7 +151,7 @@ function Body() {
           <h2 className="text-bold">Whenever you wish, wherever you want</h2>
         </div>
 
-        <div className="col-md-6">
+        <div className="col-md-8">
           <h3 className="text-medium">
             Book lessons in advance or Call whenever you want from where you
             are!
@@ -167,11 +173,11 @@ function Body() {
         <img src={runner} className="runner-img" />
         <img src={weight} className="weight-img" />
 
-        <img src={logo} alt="logo-mid" className="bottom-logo-img" />
+        <img src={circleLogo} alt="logo-mid" className="bottom-logo-img" />
       </section>
 
       <div className="download-container">
-        <h3 className="download-text">Download Now</h3>
+        <h1 className="download-text">Download Now</h1>
         <div className="emty" />
         <div className="app-btn-bottom">
           <a href="https://www.apple.com/in/app-store/" target="_blank">
@@ -183,7 +189,7 @@ function Body() {
           </a>
         </div>
 
-        <h3 className="mail-text">hello@hifit.live</h3>
+        <h1 className="mail-text">hello@hifit.live</h1>
 
         <section className="social-icons-container">
           <div className="row ">
@@ -220,6 +226,9 @@ function Body() {
               </a>
             </div>
           </div>
+          {/* <div className="curve">
+            <img src={curveimage} alt="curve-img" className="curve_img"/>
+        </div> */}
 
           <div className="footer-card">
             <img src={footercard} />
@@ -230,31 +239,50 @@ function Body() {
       {/* footer section */}
       <div className="footer-section">
         <div className="row">
-          <div className="col-3">
+          <a
+            href="#"
+            className="col-2"
+            onClick={() => navigate("/DistanceSalesAgreement")}
+          >
             <h5 className="footer-text">Distance Sales Agreement</h5>
-          </div>
-
-          <div className="col-3">
-            <h5 className="footer-text">Privacy Policy</h5>
-          </div>
-
-          <div className="col-3">
-            <h5 className="footer-text">Delivery and Returns</h5>
-          </div>
-
-          <div className="col-3">
-            <h5 className="footer-text">Contact</h5>
-          </div>
-        </div>
-
-      </div>
-    
-      <div className="right-reserved-container">
-          <a href="#">
-            <h5 className="footer-bottom-text">© 2022 Hifit All rights reserved</h5>
           </a>
-        </div> 
 
+          <a
+            href="#"
+            className="col-2"
+            onClick={() => navigate("/PrivacyPolicy")}
+          >
+            <h5 className="footer-text">Privacy Policy</h5>
+          </a>
+          <a
+            href="#"
+            className="col-2"
+            onClick={() => navigate("/Kvkk")}
+          >
+            <h5 className="footer-text">kvkk</h5>
+          </a>
+
+          <a
+            href="#"
+            className="col-2"
+            onClick={() => navigate("/Delivery&Returns")}
+          >
+            <h5 className="footer-text">Delivery and Returns</h5>
+          </a>
+
+          <a href="#" className="col-2" onClick={() => navigate("/Contact")}>
+            <h5 className="footer-text">Contact</h5>
+          </a>
+        </div>
+      </div>
+
+      <div className="right-reserved-container">
+        <a href="#">
+          <h5 className="footer-bottom-text">
+            © 2022 Hifit All rights reserved
+          </h5>
+        </a>
+      </div>
     </div>
   );
 }
